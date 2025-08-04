@@ -1,0 +1,9 @@
+Summaries of Landmark Indian Case Law
+Case Name: Donoghue v Stevenson (1932)
+Principle: This case established the "neighbour principle," which is a foundational concept of the duty of care in negligence law. It holds that a manufacturer owes a duty of care to the ultimate consumer of their product. A consumer who was injured by a defective product (a snail in a ginger beer bottle) could sue the manufacturer directly, even though there was no contract between them. This principle is widely influential in Indian consumer law.
+
+Case Name: Carlill v Carbolic Smoke Ball Company (1893)
+Principle: This case is a landmark ruling on what constitutes a unilateral contract. The company advertised a reward for anyone who used their product and still caught influenza. When Mrs. Carlill did, the company refused to pay. The court held that the advertisement was not a mere puff but a binding offer to the world, which Mrs. Carlill had accepted by performing the conditions. This is relevant to cases of misleading advertisements and public offers.
+
+Case Name: Indian Medical Association vs V.P. Shantha (1995)
+Principle: The Supreme Court of India held that medical services, even those provided for free at government hospitals, fall under the definition of "service" under the Consumer Protection Act. This landmark judgment brought the medical profession within the ambit of consumer law, allowing patients to sue doctors and hospitals for medical negligence and deficiency in service.
