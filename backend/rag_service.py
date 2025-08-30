@@ -152,6 +152,25 @@ class RAGSystem:
         response = self.generative_model.generate_content(prompt, generation_config=generation_config)
         return json.loads(response.text)
 
+    def summarize_conversation(self, conversation_history: list):
+        """Summarizes the conversation using the generative model."""
+        history_str = "\n".join([f"{msg['role']}: {msg['content']}" for msg in conversation_history])
+
+        prompt = f"""
+        Please provide a concise summary of the following legal conversation.
+        Focus on the key questions asked by the user and the main points of the legal advice provided.
+
+        CONVERSATION:
+        ---
+        {history_str}
+        ---
+
+        SUMMARY:
+        """
+
+        response = self.generative_model.generate_content(prompt)
+        return response.text
+
 # Initialize RAG system
 try:
     rag_system = RAGSystem()
@@ -201,6 +220,25 @@ def chat():
 @app.route('/health', methods=['GET'])
 def health():
     return jsonify({"status": "healthy", "rag_system": rag_system is not None})
+
+@app.route('/api/summarize', methods=['POST'])
+def summarize():
+    if not rag_system:
+        return jsonify({"error": "RAG system not available"}), 500
+
+    try:
+        data = request.get_json()
+        history = data.get('history', [])
+
+        if len(history) < 2:
+            return jsonify({"summary": "Not enough conversation to summarize."})
+
+        summary = rag_system.summarize_conversation(history)
+        return jsonify({"summary": summary})
+
+    except Exception as e:
+        print(f"An error occurred in the summarize endpoint: {e}")
+        return jsonify({"error": "An internal error occurred"}), 500
 
 if __name__ == '__main__':
     app.run(host='0.0.0.0', port=5001, debug=True)

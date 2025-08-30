@@ -1,10 +1,7 @@
 import { useState, useRef, useEffect } from 'react';
 import axios from 'axios';
 
-const ChatInterface = () => {
-  const [messages, setMessages] = useState([
-    { role: 'assistant', content: 'Hello! I am Legal Sahayak, your AI legal assistant. How can I help you with your legal questions today?' }
-  ]);
+const ChatInterface = ({ messages, setMessages }) => {
   const [inputValue, setInputValue] = useState('');
   const [isLoading, setIsLoading] = useState(false);
   const messagesEndRef = useRef(null);
@@ -111,7 +108,7 @@ const ChatInterface = () => {
   };
 
   return (
-    <div className="flex flex-col h-full max-w-4xl mx-auto bg-white shadow-lg rounded-lg overflow-hidden">
+    <div className="flex flex-col h-full bg-white shadow-lg rounded-lg overflow-hidden">
       {/* Messages container */}
       <div className="flex-1 p-4 overflow-y-auto bg-gray-50">
         <div className="space-y-4">
