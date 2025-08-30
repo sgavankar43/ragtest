@@ -52,6 +52,20 @@ app.get('/api/rag-health', async (req, res) => {
   }
 });
 
+// Proxy summarize requests to RAG service
+app.post('/api/summarize', async (req, res) => {
+  try {
+    const response = await axios.post(`${RAG_SERVICE_URL}/api/summarize`, req.body);
+    res.json(response.data);
+  } catch (error) {
+    console.error('Error forwarding request to RAG service:', error.message);
+    res.status(500).json({
+      error: 'Failed to process request',
+      details: error.message
+    });
+  }
+});
+
 // Start server
 app.listen(PORT, () => {
   console.log(`Node.js Backend running on port ${PORT}`);
