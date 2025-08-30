@@ -1,7 +1,8 @@
 import { useState, useRef, useEffect } from 'react';
 import axios from 'axios';
 
-const ChatInterface = ({ messages, setMessages }) => {
+const ChatInterface = ({ messages, setMessages, theme }) => {
+  const { darkMode, setDarkMode, neumorph, bgColor, cardColor, textColor, borderColor } = theme;
   const [inputValue, setInputValue] = useState('');
   const [isLoading, setIsLoading] = useState(false);
   const messagesEndRef = useRef(null);
@@ -124,9 +125,9 @@ const ChatInterface = ({ messages, setMessages }) => {
   };
 
   return (
-    <div className="flex flex-col h-full bg-white dark:bg-gray-800 shadow-lg rounded-lg overflow-hidden">
+    <div className={`flex flex-col h-full ${cardColor} shadow-lg rounded-lg overflow-hidden m-2`}>
       {/* Messages container */}
-      <div className="flex-1 p-4 overflow-y-auto bg-gray-50 dark:bg-gray-900">
+      <div className={`flex-1 p-4 overflow-y-auto ${bgColor}`}>
         <div className="space-y-4">
           {messages.map((message, index) => (
             <div
@@ -137,7 +138,7 @@ const ChatInterface = ({ messages, setMessages }) => {
                 className={`max-w-xs md:max-w-md lg:max-w-lg rounded-lg px-4 py-2 ${
                   message.role === 'user'
                     ? 'bg-blue-500 text-white rounded-br-none'
-                    : 'bg-gray-200 text-gray-800 rounded-bl-none dark:bg-gray-700 dark:text-gray-200'
+                    : `${cardColor} rounded-bl-none`
                 }`}
               >
                 {message.role === 'assistant' ? (
@@ -164,7 +165,7 @@ const ChatInterface = ({ messages, setMessages }) => {
       </div>
 
       {/* Input area */}
-      <div className="p-4 bg-white border-t dark:bg-gray-800 dark:border-gray-700">
+      <div className={`p-4 ${cardColor} border-t ${borderColor}`}>
         <form onSubmit={handleSubmit} className="flex items-start space-x-2">
           <textarea
             ref={inputRef}
@@ -172,7 +173,7 @@ const ChatInterface = ({ messages, setMessages }) => {
             onChange={(e) => setInputValue(e.target.value)}
             onKeyDown={handleKeyDown}
             placeholder="Ask me about your legal rights, relevant laws, or case precedents..."
-            className="flex-1 border border-gray-300 rounded-lg px-4 py-2 resize-none overflow-y-auto focus:outline-none focus:ring-2 focus:ring-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:text-white"
+            className={`flex-1 ${bgColor} ${borderColor} border rounded-lg px-4 py-2 resize-none overflow-y-auto focus:outline-none focus:ring-2 focus:ring-blue-500`}
             rows="1"
             style={{ maxHeight: '150px' }}
             disabled={isLoading}
@@ -180,7 +181,7 @@ const ChatInterface = ({ messages, setMessages }) => {
           <button
             type="submit"
             disabled={!inputValue.trim() || isLoading}
-            className="bg-blue-500 text-white rounded-full px-4 py-2 self-end hover:bg-blue-600 disabled:bg-blue-300 disabled:cursor-not-allowed focus:outline-none focus:ring-2 focus:ring-blue-500"
+            className={`bg-blue-500 text-white rounded-full px-4 py-2 self-end hover:bg-blue-600 disabled:bg-blue-300 disabled:cursor-not-allowed focus:outline-none focus:ring-2 focus:ring-blue-500 hover:${neumorph}`}
           >
             Send
           </button>
