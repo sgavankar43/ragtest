@@ -1,0 +1,73 @@
+The Consumer Protection Act, 2019 - Key Sections
+CHAPTER I - PRELIMINARY
+Section 2. Definitions.
+
+(1) "advertisement" means any audio or visual publicity, representation, endorsement or pronouncement made by means of light, sound, smoke, gas, print, electronic media, internet or website and includes any notice, circular, label, wrapper, invoice or such other documents;
+
+(7) "consumer" means any person who—
+(i) buys any goods for a consideration which has been paid or promised or partly paid and partly promised, or under any system of deferred payment and includes any user of such goods other than the person who buys such goods for consideration paid or promised or partly paid or partly promised, or under any system of deferred payment, when such use is made with the approval of such person, but does not include a person who obtains such goods for resale or for any commercial purpose; or
+(ii) hires or avails of any service for a consideration which has been paid or promised or partly paid and partly promised, or under any system of deferred payment and includes any beneficiary of such service other than the person who hires or avails of the services for consideration paid or promised, or partly paid and partly promised, or under any system of deferred payment, when such services are availed of with the approval of the first mentioned person, but does not include a person who avails of such service for any commercial purpose.
+Explanation.—For the purposes of this clause, “commercial purpose” does not include use by a person of goods bought and used by him exclusively for the purpose of earning his livelihood, by means of self-employment;
+
+(9) "consumer rights" includes,—
+(i) the right to be protected against the marketing of goods, products or services which are hazardous to life and property;
+(ii) the right to be informed about the quality, quantity, potency, purity, standard and price of goods, products or services, as the case may be, so as to protect the consumer against unfair trade practices;
+(iii) the right to be assured, wherever possible, access to a variety of goods, products or services at competitive prices;
+(iv) the right to be heard and to be assured that consumer's interests will receive due consideration at appropriate fora;
+(v) the right to seek redressal against unfair trade practice or restrictive trade practice or unscrupulous exploitation of consumers; and
+(vi) the right to consumer awareness;
+
+(10) "defect" means any fault, imperfection or shortcoming in the quality, quantity, potency, purity or standard which is required to be maintained by or under any law for the time being in force or under any contract, express or implied or as is claimed by the trader in any manner whatsoever in relation to any goods or product and includes any structural defect or any manufacturing defect or any imperfection or deficiency in design thereof;
+
+(11) "deficiency" means any fault, imperfection, shortcoming or inadequacy in the quality, nature and manner of performance which is required to be maintained by or under any law for the time being in force or has been undertaken to be performed by a person in pursuance of a contract or otherwise in relation to any service and includes— (i) any act of negligence or omission or commission by such person which causes loss or injury to the consumer; and (ii) deliberate withholding of relevant information by such person to the consumer;
+
+(47) "unfair trade practice" means a trade practice which, for the purpose of promoting the sale, use or supply of any goods or for the provision of any service, adopts any unfair method or unfair or deceptive practice including any of the following practices, namely:—
+(i) making any statement, whether orally or in writing or by visible representation which— (a) falsely represents that the goods are of a particular standard, quality, quantity, grade, composition, style or model; (b) falsely represents that the services are of a particular standard, quality or grade;
+(ii) permitting the publication of any advertisement, whether in any newspaper or otherwise, for the sale or supply at a bargain price, of goods or services that are not intended to be offered for sale or supply at the bargain price;
+
+CHAPTER II - CONSUMER PROTECTION COUNCILS
+Section 3. Central Consumer Protection Council.
+The Central Government shall, by notification, establish a Council to be known as the Central Consumer Protection Council. The Central Council shall be an advisory council and consist of the Minister-in-charge of the Department of Consumer Affairs in the Central Government as its Chairperson.
+
+CHAPTER III - CENTRAL CONSUMER PROTECTION AUTHORITY
+Section 10. Establishment of Central Consumer Protection Authority.
+The Central Government shall, by notification, establish a Central Consumer Protection Authority to be known as the Central Authority to regulate matters relating to violation of rights of consumers, unfair trade practices and false or misleading advertisements which are prejudicial to the interests of public and consumers and to promote, protect and enforce the rights of consumers as a class.
+
+Section 21. Power of Central Authority to issue directions and penalties against false or misleading advertisements.
+(1) Where the Central Authority is satisfied after investigation that any advertisement is false or misleading and is prejudicial to the interest of any consumer or is in contravention of consumer rights, it may, by order, issue directions to the concerned trader or manufacturer or endorser or advertiser or publisher, as the case may be, to discontinue such advertisement or to modify the same in such manner and within such time as may be specified in that order.
+(2) Notwithstanding the order passed under sub-section (1), if the Central Authority is of the opinion that it is necessary to impose a penalty in respect of such false or misleading advertisement, by a manufacturer or an endorser, it may, by order, impose on manufacturer or endorser a penalty which may extend to ten lakh rupees.
+
+CHAPTER IV - CONSUMER DISPUTES REDRESSAL COMMISSION
+Section 28. Establishment of District Consumer Disputes Redressal Commission.
+The State Government shall, by notification, establish a District Consumer Disputes Redressal Commission, to be known as the District Commission, in each district of the State.
+
+Section 34. Jurisdiction of District Commission.
+(1) Subject to the other provisions of this Act, the District Commission shall have jurisdiction to entertain complaints where the value of the goods or services paid as consideration does not exceed one crore rupees.
+
+Section 42. Establishment of State Consumer Disputes Redressal Commission.
+The State Government shall, by notification, establish a State Consumer Disputes Redressal Commission, to be known as the State Commission.
+
+Section 47. Jurisdiction of State Commission.
+(1) Subject to the other provisions of this Act, the State Commission shall have jurisdiction— (a) to entertain— (i) complaints where the value of the goods or services paid as consideration, exceeds rupees one crore, but does not exceed rupees ten crore;
+
+Section 53. Establishment of National Consumer Disputes Redressal Commission.
+The Central Government shall, by notification, establish a National Consumer Disputes Redressal Commission, to be known as the National Commission.
+
+Section 58. Jurisdiction of National Commission.
+(1) Subject to the other provisions of this Act, the National Commission shall have jurisdiction— (a) to entertain— (i) complaints where the value of the goods or services paid as consideration exceeds rupees ten crore;
+
+CHAPTER VI - PRODUCT LIABILITY
+Section 84. Liability of product manufacturer.
+A product manufacturer shall be liable in a product liability action, if—
+(a) the product contains a manufacturing defect;
+(b) the product is defective in design;
+(c) there is a deviation from manufacturing specifications;
+(d) the product does not conform to the express warranty; or
+(e) the product fails to contain adequate instructions of correct usage to prevent any harm or any warning regarding improper or incorrect usage.
+
+Section 85. Liability of product service provider.
+A product service provider shall be liable in a product liability action, if—
+(a) the service provided by him was faulty or imperfect or deficient or inadequate in quality, nature or manner of performance which is required to be provided by or under any law for the time being in force, or pursuant to any contract or otherwise;
+(b) there was an act of omission or commission or negligence or conscious withholding of any information which caused harm;
+(c) the service provider did not issue adequate instructions or warnings to prevent any harm; or
+(d) the service did not conform to the express warranty or the terms and conditions of the contract.

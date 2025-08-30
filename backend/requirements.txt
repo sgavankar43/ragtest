@@ -1,14 +1,6 @@
-
-
-fastapi
-uvicorn[standard]
-
+flask
+flask-cors
 google-generativeai
 python-dotenv
 faiss-cpu
-
-
-PyMuPDF
-docx2txt
-
 google-api-python-client

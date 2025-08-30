@@ -1,0 +1,30 @@
+{
+  "name": "backend",
+  "version": "1.0.0",
+  "main": "src/index.js",
+  "type": "module",
+  "scripts": {
+    "dev": "nodemon src/index.js",
+    "start": "node src/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sgavankar43/webuil.git"
+  },
+  "author": "team 6-7-8-9",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/sgavankar43/webuil/issues"
+  },
+  "homepage": "https://github.com/sgavankar43/webuil#readme",
+  "dependencies": {
+    "express": "^5.1.0",
+    "cors": "^2.8.5",
+    "axios": "^1.6.0",
+    "nodemon": "^3.1.10"
+  },
+  "devDependencies": {
+    "prettier": "^3.6.2"
+  },
+  "description": "Node.js Backend with RAG Integration"
+}

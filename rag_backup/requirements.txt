@@ -1,0 +1,14 @@
+
+
+fastapi
+uvicorn[standard]
+
+google-generativeai
+python-dotenv
+faiss-cpu
+
+
+PyMuPDF
+docx2txt
+
+google-api-python-client
