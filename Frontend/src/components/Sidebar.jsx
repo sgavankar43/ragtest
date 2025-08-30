@@ -16,7 +16,8 @@ import {
   Moon,
 } from "lucide-react";
 
-const Sidebar = ({ darkMode, setDarkMode }) => {
+const Sidebar = ({ theme }) => {
+  const { darkMode, setDarkMode, neumorph, bgColor, cardColor, textColor, borderColor } = theme;
   const [collapsed, setCollapsed] = useState(false);
 
   const navItemsMain = [
@@ -33,15 +34,6 @@ const Sidebar = ({ darkMode, setDarkMode }) => {
     { label: "Billing", icon: Receipt },
     { label: "Notifications", icon: Bell },
   ];
-
-  const neumorph =
-    darkMode
-      ? "shadow-[inset_4px_4px_10px_#1a1a1a,inset_-4px_-4px_10px_#2c2c2c]"
-      : "shadow-[inset_4px_4px_10px_#d1d9e6,inset_-4px_-4px_10px_#ffffff]";
-
-  const bgColor = darkMode ? "bg-[#1e1e1e] text-white" : "bg-[#f1f3f6] text-gray-800";
-  const cardColor = darkMode ? "bg-[#252525]" : "bg-[#e2e8f0]";
-  const borderColor = darkMode ? "border-[#2c2c2c]" : "border-gray-300";
 
   return (
     <div
