@@ -124,19 +124,21 @@ const ChatInterface = ({ messages, setMessages }) => {
   };
 
   return (
-    <div className="flex flex-col h-full bg-white shadow-lg rounded-lg overflow-hidden">
+    <div className="flex flex-col h-full bg-white dark:bg-gray-800 shadow-lg rounded-lg overflow-hidden">
       {/* Messages container */}
-      <div className="flex-1 p-4 overflow-y-auto bg-gray-50">
+      <div className="flex-1 p-4 overflow-y-auto bg-gray-50 dark:bg-gray-900">
         <div className="space-y-4">
           {messages.map((message, index) => (
-            <div 
-              key={index} 
+            <div
+              key={index}
               className={`flex ${message.role === 'user' ? 'justify-end' : 'justify-start'}`}
             >
-              <div 
-                className={`max-w-xs md:max-w-md lg:max-w-lg rounded-lg px-4 py-2 ${message.role === 'user' 
-                  ? 'bg-blue-500 text-white rounded-br-none' 
-                  : 'bg-gray-200 text-gray-800 rounded-bl-none'}`}
+              <div
+                className={`max-w-xs md:max-w-md lg:max-w-lg rounded-lg px-4 py-2 ${
+                  message.role === 'user'
+                    ? 'bg-blue-500 text-white rounded-br-none'
+                    : 'bg-gray-200 text-gray-800 rounded-bl-none dark:bg-gray-700 dark:text-gray-200'
+                }`}
               >
                 {message.role === 'assistant' ? (
                   <div className="whitespace-pre-line">{message.content}</div>
@@ -162,7 +164,7 @@ const ChatInterface = ({ messages, setMessages }) => {
       </div>
 
       {/* Input area */}
-      <div className="p-4 bg-white border-t">
+      <div className="p-4 bg-white border-t dark:bg-gray-800 dark:border-gray-700">
         <form onSubmit={handleSubmit} className="flex items-start space-x-2">
           <textarea
             ref={inputRef}
@@ -170,7 +172,7 @@ const ChatInterface = ({ messages, setMessages }) => {
             onChange={(e) => setInputValue(e.target.value)}
             onKeyDown={handleKeyDown}
             placeholder="Ask me about your legal rights, relevant laws, or case precedents..."
-            className="flex-1 border border-gray-300 rounded-lg px-4 py-2 resize-none overflow-y-auto focus:outline-none focus:ring-2 focus:ring-blue-500"
+            className="flex-1 border border-gray-300 rounded-lg px-4 py-2 resize-none overflow-y-auto focus:outline-none focus:ring-2 focus:ring-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:text-white"
             rows="1"
             style={{ maxHeight: '150px' }}
             disabled={isLoading}

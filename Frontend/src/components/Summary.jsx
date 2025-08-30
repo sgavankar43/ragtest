@@ -22,7 +22,7 @@ const Summary = ({ messages }) => {
   };
 
   return (
-    <div className="w-80 h-full bg-gray-50 p-4 border-l border-gray-200 flex flex-col">
+    <div className="w-80 h-full bg-gray-50 dark:bg-gray-800 p-4 border-l border-gray-200 dark:border-gray-700 flex flex-col m-2 rounded-lg shadow-lg text-gray-900 dark:text-gray-100">
       <h2 className="text-lg font-semibold mb-4">Conversation Summary</h2>
       <button
         onClick={handleSummarize}
@@ -31,11 +31,11 @@ const Summary = ({ messages }) => {
       >
         {isLoading ? 'Summarizing...' : 'Summarize Conversation'}
       </button>
-      <div className="flex-1 overflow-y-auto border rounded-md p-2 bg-white">
+      <div className="flex-1 overflow-y-auto border rounded-md p-2 bg-white dark:bg-gray-700">
         {summary ? (
           <p className="text-sm whitespace-pre-wrap">{summary}</p>
         ) : (
-          <p className="text-sm text-gray-500">Click the button to generate a summary of the current conversation.</p>
+          <p className="text-sm text-gray-500 dark:text-gray-400">Click the button to generate a summary of the current conversation.</p>
         )}
       </div>
     </div>

@@ -16,9 +16,8 @@ import {
   Moon,
 } from "lucide-react";
 
-const Sidebar = () => {
+const Sidebar = ({ darkMode, setDarkMode }) => {
   const [collapsed, setCollapsed] = useState(false);
-  const [darkMode, setDarkMode] = useState(true);
 
   const navItemsMain = [
     { label: "Dashboard", icon: LayoutDashboard },
