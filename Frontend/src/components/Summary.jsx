@@ -22,7 +22,7 @@ const Summary = ({ messages }) => {
   };
 
   return (
-    <div className="w-80 bg-gray-50 p-4 border-l border-gray-200 flex flex-col">
+    <div className="w-80 h-full bg-gray-50 p-4 border-l border-gray-200 flex flex-col">
       <h2 className="text-lg font-semibold mb-4">Conversation Summary</h2>
       <button
         onClick={handleSummarize}

@@ -9,12 +9,12 @@ const Home = () => {
   ]);
 
   return (
-    <div className="flex h-screen bg-gray-100 dark:bg-gray-900">
+<div className="flex h-screen bg-gray-100 dark:bg-gray-900 overflow-hidden">
       <Sidebar />
-      <div className="flex-1 flex flex-col overflow-hidden">
+  <Summary messages={messages} />
+  <div className="flex-1 flex flex-col">
         <ChatWindow messages={messages} setMessages={setMessages} />
       </div>
-      <Summary messages={messages} />
     </div>
   );
 };

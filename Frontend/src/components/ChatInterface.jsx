@@ -15,10 +15,26 @@ const ChatInterface = ({ messages, setMessages }) => {
     messagesEndRef.current?.scrollIntoView({ behavior: 'smooth' });
   }, [messages]);
 
+  // Auto-resize textarea
+  useEffect(() => {
+    if (inputRef.current) {
+      inputRef.current.style.height = 'auto';
+      const scrollHeight = inputRef.current.scrollHeight;
+      inputRef.current.style.height = `${scrollHeight}px`;
+    }
+  }, [inputValue]);
+
   // Focus input on load
   useEffect(() => {
     inputRef.current?.focus();
   }, []);
+
+  const handleKeyDown = (e) => {
+    if (e.key === 'Enter' && !e.shiftKey) {
+      e.preventDefault();
+      handleSubmit(e);
+    }
+  };
 
   const handleSubmit = async (e) => {
     e.preventDefault();
@@ -147,20 +163,22 @@ const ChatInterface = ({ messages, setMessages }) => {
 
       {/* Input area */}
       <div className="p-4 bg-white border-t">
-        <form onSubmit={handleSubmit} className="flex space-x-2">
-          <input
+        <form onSubmit={handleSubmit} className="flex items-start space-x-2">
+          <textarea
             ref={inputRef}
-            type="text"
             value={inputValue}
             onChange={(e) => setInputValue(e.target.value)}
+            onKeyDown={handleKeyDown}
             placeholder="Ask me about your legal rights, relevant laws, or case precedents..."
-            className="flex-1 border border-gray-300 rounded-full px-4 py-2 focus:outline-none focus:ring-2 focus:ring-blue-500"
+            className="flex-1 border border-gray-300 rounded-lg px-4 py-2 resize-none overflow-y-auto focus:outline-none focus:ring-2 focus:ring-blue-500"
+            rows="1"
+            style={{ maxHeight: '150px' }}
             disabled={isLoading}
           />
           <button
             type="submit"
             disabled={!inputValue.trim() || isLoading}
-            className="bg-blue-500 text-white rounded-full px-4 py-2 hover:bg-blue-600 disabled:bg-blue-300 disabled:cursor-not-allowed focus:outline-none focus:ring-2 focus:ring-blue-500"
+            className="bg-blue-500 text-white rounded-full px-4 py-2 self-end hover:bg-blue-600 disabled:bg-blue-300 disabled:cursor-not-allowed focus:outline-none focus:ring-2 focus:ring-blue-500"
           >
             Send
           </button>
