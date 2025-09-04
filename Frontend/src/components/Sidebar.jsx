@@ -43,7 +43,7 @@ const Sidebar = ({ theme }) => {
     >
       <div>
         {/* Top controls */}
-        <div className={`flex items-center mb-6 ${collapsed ? 'flex-col gap-4' : 'justify-between'}`}>
+        <div className={`flex items-center my-4 ${collapsed ? 'flex-col gap-4' : 'justify-between'}`}>
           <button
             onClick={() => setCollapsed(!collapsed)}
             className={`text-inherit rounded-full p-2 ${cardColor} hover:${neumorph}`}
