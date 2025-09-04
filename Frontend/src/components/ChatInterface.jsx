@@ -125,7 +125,7 @@ const ChatInterface = ({ messages, setMessages, theme }) => {
   };
 
   return (
-    <div className={`flex flex-col h-full ${cardColor} shadow-lg rounded-lg overflow-hidden m-2`}>
+    <div className={`flex flex-col h-full ${cardColor} shadow-lg rounded-lg overflow-hidden m-2 border ${borderColor}`}>
       {/* Messages container */}
       <div className={`flex-1 p-4 overflow-y-auto ${bgColor}`}>
         <div className="space-y-4">

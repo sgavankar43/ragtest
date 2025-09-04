@@ -39,11 +39,11 @@ const Sidebar = ({ theme }) => {
     <div
       className={`${
         collapsed ? "w-20" : "w-64"
-      } h-screen ${bgColor} p-4 transition-all duration-300 flex flex-col justify-between border-r ${borderColor}`}
+      } h-screen ${bgColor} p-4 transition-all duration-300 flex flex-col justify-between border ${borderColor}`}
     >
       <div>
         {/* Top controls */}
-        <div className="flex items-center justify-between mb-6">
+        <div className={`flex items-center mb-6 ${collapsed ? 'flex-col gap-4' : 'justify-between'}`}>
           <button
             onClick={() => setCollapsed(!collapsed)}
             className={`text-inherit rounded-full p-2 ${cardColor} hover:${neumorph}`}
