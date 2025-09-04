@@ -28,7 +28,7 @@ const Home = () => {
   const theme = { darkMode, setDarkMode, neumorph, bgColor, cardColor, textColor, borderColor };
 
   return (
-    <div className={`flex h-screen w-full ${bgColor} ${textColor} overflow-hidden`}>
+    <div className={`flex h-screen w-full ${bgColor} ${textColor} overflow-hidden p-4 gap-4`}>
       <Sidebar theme={theme} />
       <div className="flex-1 flex flex-col">
         <ChatWindow messages={messages} setMessages={setMessages} theme={theme} />

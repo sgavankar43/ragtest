@@ -39,7 +39,7 @@ const Sidebar = ({ theme }) => {
     <div
       className={`${
         collapsed ? "w-20" : "w-64"
-      } h-screen ${bgColor} p-4 transition-all duration-300 flex flex-col justify-between border ${borderColor}`}
+      } h-full ${bgColor} p-4 transition-all duration-300 flex flex-col justify-between border ${borderColor} rounded-lg`}
     >
       <div>
         {/* Top controls */}

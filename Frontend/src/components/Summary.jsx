@@ -28,7 +28,7 @@ const Summary = ({ messages, theme }) => {
       <button
         onClick={handleSummarize}
         disabled={isLoading || messages.length <= 1}
-        className={`bg-blue-500 text-white rounded-md px-4 py-2 mb-4 hover:bg-blue-600 disabled:bg-blue-300 hover:${neumorph}`}
+        className={`w-full p-2 rounded-lg ${cardColor} hover:${neumorph} disabled:opacity-50 disabled:cursor-not-allowed mb-4`}
       >
         {isLoading ? 'Summarizing...' : 'Summarize Conversation'}
       </button>

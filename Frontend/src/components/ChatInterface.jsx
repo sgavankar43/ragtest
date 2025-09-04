@@ -1,4 +1,5 @@
 import { useState, useRef, useEffect } from 'react';
+import { Send } from 'lucide-react';
 import axios from 'axios';
 
 const ChatInterface = ({ messages, setMessages, theme }) => {
@@ -181,9 +182,9 @@ const ChatInterface = ({ messages, setMessages, theme }) => {
           <button
             type="submit"
             disabled={!inputValue.trim() || isLoading}
-            className={`bg-blue-500 text-white rounded-full px-4 py-2 self-end hover:bg-blue-600 disabled:bg-blue-300 disabled:cursor-not-allowed focus:outline-none focus:ring-2 focus:ring-blue-500 hover:${neumorph}`}
+            className={`p-2 rounded-full ${cardColor} hover:${neumorph} disabled:opacity-50 disabled:cursor-not-allowed self-end`}
           >
-            Send
+            <Send size={20} />
           </button>
         </form>
       </div>
